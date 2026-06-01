@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hdc-ops"
+version = "0.1.0"
+description = "A clean, well-documented HDC / Vector-Symbolic-Architecture operator library (bind / bundle / permute / unbind) on plain numpy, with an optional MLX backend."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Michael (Xiaojie) Huo" }]
+dependencies = ["numpy>=1.21"]
+
+[project.optional-dependencies]
+mlx = ["mlx>=0.9"]
+
+[tool.setuptools]
+packages = ["hdc_ops"]
