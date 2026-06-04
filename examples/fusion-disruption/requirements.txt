@@ -1,0 +1,10 @@
+# Core: the experiments + figures (the HDC paths are numpy-only)
+numpy>=1.21
+matplotlib>=3.5        # figures/make_figures.py only
+
+# Data fetch from the FAIR-MAST open S3 store (fetch/fetch_mast.py only)
+s3fs>=2023.1.0
+xarray>=2023.1.0
+zarr>=2.13,<3          # FAIR-MAST shots are zarr v2, consolidated
+
+# hdc-ops itself: from the repo root, `pip install -e .`  (or it is auto-found on sys.path when run in-tree)

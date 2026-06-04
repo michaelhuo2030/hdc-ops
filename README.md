@@ -66,6 +66,11 @@ Output:
 
 Docstrings are bilingual (English math + 中文大白话) and each carries a *when-to-use-it* note.
 
+## Examples
+
+- **[`examples/quickstart.py`](examples/quickstart.py)** — the three things hypervectors do (bind / bundle / search), in ~30 lines.
+- **[`examples/fusion-disruption/`](examples/fusion-disruption/)** — a full application: an interpretable, *abstaining* tokamak **disruption predictor on real public plasma data** (MAST / GOLEM), built on these operators. The encoder is literally `bundle([bind(level, pos) …])`; it adds provenance ("names the prior shots behind every call"), selective prediction (0.78→0.97 by deferring the ambiguous), and a conformal coverage guarantee. Reproduces a paper; honest about where HDC *loses* too.
+
 ## Related
 
 - **[hdc-neon](https://github.com/michaelhuo2030/hdc-neon)** — the same operations, NEON-SIMD accelerated (~89× over numpy).

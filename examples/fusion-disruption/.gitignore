@@ -1,0 +1,9 @@
+# downloaded data + generated outputs are not committed (the READMEs are)
+data/mast_ctrl/
+data/golem/
+results/
+figures/*.pdf
+*.skip
+*.npz
+*.npy
+__pycache__/
